@@ -15,4 +15,4 @@ Open `index.html` directly, or open the folder in VS Code and use Live Server.
 - `contact.html` — email and LinkedIn
 
 ## Editing
-Shared colors, typography, spacing, and layout are in `css/style.css`.
+Shared colors, typography, spacing, and layout are in `css/style.css`..
