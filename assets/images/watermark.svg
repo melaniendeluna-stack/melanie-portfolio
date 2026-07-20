@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Laboratory science line-art watermark</title>
+  <desc id="desc">A minimalist light-blue continuous line illustration featuring a microscope, DNA helix, pipette, droplet, and petri dish on a transparent background.</desc>
+
+  <g fill="none"
+     stroke="#9CC7E8"
+     stroke-width="7"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- Microscope -->
+    <path d="M120 414 H330" />
+    <path d="M170 414 V266
+             C170 236 188 214 216 204
+             L268 185" />
+    <path d="M244 116 H302
+             L321 158
+             L269 184 Z" />
+    <path d="M252 184 L277 229 L319 214" />
+    <path d="M191 292 H327" />
+    <path d="M220 292
+             C212 332 227 365 259 385" />
+    <circle cx="181" cy="342" r="18" />
+    <circle cx="219" cy="342" r="12" />
+    <path d="M130 414
+             C205 414 267 407 333 382" />
+
+    <!-- Flow into DNA -->
+    <path d="M333 382
+             C394 360 435 328 478 293" />
+
+    <!-- DNA double helix -->
+    <path d="M478 293
+             C547 239 548 183 486 132
+             C443 96 459 57 523 31" />
+    <path d="M478 293
+             C415 242 417 186 486 132
+             C537 92 531 57 480 31" />
+
+    <path d="M465 265 H512" />
+    <path d="M446 229 H530" />
+    <path d="M446 191 H530" />
+    <path d="M466 154 H510" />
+    <path d="M483 112 H523" />
+    <path d="M481 72 H516" />
+
+    <!-- Flow from DNA toward pipette -->
+    <path d="M523 31
+             C613 2 701 22 764 76" />
+
+    <!-- Pipette -->
+    <path d="M824 57
+             L886 99
+             L828 188
+             L779 155 Z" />
+    <path d="M779 155
+             L744 207
+             L716 316" />
+    <path d="M801 132 L852 166" />
+    <path d="M824 57
+             L848 22
+             L911 65
+             L886 99" />
+
+    <!-- Droplet -->
+    <path d="M704 338
+             C694 354 689 364 689 374
+             C689 389 701 400 716 400
+             C731 400 743 389 743 374
+             C743 363 735 350 716 324
+             C711 331 708 335 704 338 Z" />
+
+    <!-- Petri dish -->
+    <ellipse cx="941" cy="368" rx="156" ry="39" />
+    <path d="M785 368
+             L796 405
+             C811 435 1071 435 1086 405
+             L1097 368" />
+    <path d="M826 376
+             C858 358 896 382 927 367
+             C965 348 1000 384 1048 363" />
+
+    <!-- End flourish -->
+    <path d="M1086 405
+             C1120 407 1145 397 1171 376" />
+  </g>
+</svg>
