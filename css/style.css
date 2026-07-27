@@ -1524,3 +1524,184 @@ h1,h2,h3 {
     font-size: clamp(1rem, 2.5vw, q.8rem);
     max-width: 100px;
 }
+
+/* ==================================================
+   ABOUT PAGE — PHOTO RIGHT / WATERMARK BEHIND TEXT
+================================================== */
+
+.about-page .page-hero + .about-main {
+    padding-top: 38px;
+}
+
+.about-main {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 76px;
+}
+
+.about-page .about-feature {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(250px, 0.8fr);
+    gap: clamp(48px, 7vw, 88px);
+    align-items: center;
+}
+
+.about-feature-copy {
+    position: relative;
+    min-width: 0;
+    padding: 22px 0;
+}
+
+.about-text-watermark {
+    position: absolute;
+    z-index: -1;
+    top: 48px;
+    left: 105px;
+    width: min(470px, 78%);
+    height: auto;
+    opacity: 0.10;
+    pointer-events: none;
+}
+
+.about-feature-copy .about-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 28px;
+}
+
+.about-feature-copy .about-heading h2 {
+    max-width: 650px;
+    font-size: clamp(2.8rem, 4.8vw, 5rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+}
+
+.about-feature-copy > p {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 1.03rem;
+}
+
+.about-feature-copy .chips {
+    position: relative;
+    z-index: 1;
+    margin-top: 27px;
+}
+
+.about-photo-card {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 0 0 auto;
+    padding: 0 18px 18px 0;
+}
+
+.about-photo-card::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 18px;
+    right: 0;
+    bottom: 52px;
+    left: 18px;
+    background: #dcecf6;
+}
+
+.about-photo-card img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 46% 52%;
+    border: 1px solid rgba(13, 59, 102, 0.16);
+    box-shadow: 0 20px 45px rgba(30, 73, 106, 0.14);
+}
+
+.about-photo-card figcaption {
+    position: relative;
+    z-index: 2;
+    max-width: 330px;
+    margin: 16px 0 0 auto;
+    color: var(--ink);
+    font-size: 0.67rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.13em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+@media (max-width: 950px) {
+    .about-page .about-feature {
+        grid-template-columns: minmax(0, 1fr) 330px;
+        gap: 38px;
+    }
+
+    .about-feature-copy .about-heading h2 {
+        font-size: clamp(2.6rem, 4.5vw, 4rem);
+    }
+
+    .about-text-watermark {
+        left: 55px;
+        width: 82%;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-page .page-hero + .about-main {
+        padding-top: 30px;
+    }
+
+    .about-page .about-feature {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .about-feature-copy {
+        max-width: none;
+    }
+
+    .about-photo-card {
+        width: min(100%, 450px);
+        margin: 0 auto;
+    }
+
+    .about-text-watermark {
+        top: 30px;
+        left: auto;
+        right: 0;
+        width: min(420px, 76%);
+        opacity: 0.09;
+    }
+}
+
+@media (max-width: 520px) {
+    .about-feature-copy .about-heading h2 {
+        font-size: 2.65rem;
+    }
+
+    .about-text-watermark {
+        top: 55px;
+        width: 90%;
+    }
+
+    .about-photo-card {
+        padding: 0 12px 12px 0;
+    }
+
+    .about-photo-card::after {
+        top: 12px;
+        bottom: 48px;
+        left: 12px;
+    }
+
+    .about-photo-card figcaption {
+        font-size: 0.61rem;
+    }
+}
